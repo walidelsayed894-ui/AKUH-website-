@@ -1,0 +1,77 @@
+/* ===== Programme page additions ===== */
+.college-id h1{font-size:1.3rem}
+.college-id .up{display:block;font-size:.85rem;color:var(--ink-soft);text-decoration:none;margin-bottom:1px}
+.college-id .up:hover{color:var(--purple);text-decoration:underline}
+@media (max-width:1460px){.uninav{display:none}}
+@media (max-width:900px){.college-id{flex-wrap:wrap;gap:0 12px !important}.college-id .up{flex:0 0 100%}.college-id h1{white-space:normal}}
+.ar-inline{display:block;font-family:var(--arabic);font-size:1.15rem;color:var(--purple);text-align:left}
+.prog-panel{width:330px}
+.lead-in{font-family:var(--display);font-size:1.35rem;line-height:1.4;color:var(--plum)}
+.goal-list{list-style:none;padding:0;margin:0 0 8px;max-width:none}
+.goal-list li{display:flex;gap:20px;align-items:flex-start;padding:20px 0;margin:0;border-top:1px solid var(--lilac-line);max-width:none}
+.goal-list li:first-child{border-top:0;padding-top:6px}
+.goal-list b{display:block;font-family:var(--display);font-weight:600;font-size:1.2rem;color:var(--purple);margin-bottom:4px}
+.goal-list p{margin:0;font-size:1.08rem;max-width:62ch}
+.goal-list li:hover .dicon{background:var(--purple);border-color:var(--purple)}
+.goal-list li:hover .dicon svg{stroke:#fff}
+.obj{padding-left:1.3em;max-width:68ch}
+.obj li{margin-bottom:.6em;padding-left:.3em}
+.obj li::marker{color:var(--purple);font-weight:700}
+details.acc{border-top:1px solid var(--lilac-line)}
+details.acc:last-of-type{border-bottom:1px solid var(--lilac-line)}
+details.acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 4px;font-family:var(--display);font-size:1.3rem;color:var(--plum)}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary small{display:block;font-family:var(--body);font-size:.9rem;color:var(--purple);font-weight:700;margin-bottom:1px}
+details.acc>summary::after{content:"";flex:none;width:10px;height:10px;border-right:2px solid var(--purple);border-bottom:2px solid var(--purple);transform:rotate(45deg);transition:transform .2s ease;margin-right:8px}
+details.acc[open]>summary::after{transform:rotate(-135deg)}
+details.acc>summary:hover{color:var(--purple)}
+@media (prefers-reduced-motion:reduce){details.acc>summary::after{transition:none}}
+.acc-body{padding:4px 4px 26px}
+.acc-body>h4{margin:22px 0 8px;color:var(--purple)}
+.acc-body>h4:first-child{margin-top:4px}
+.acc-body>ul:not(.plo),.acc-body>ol{font-size:1.02rem}
+.plo{list-style:none;padding:0;margin:0;max-width:none}
+.plo li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--lilac-line);margin:0;font-size:1.02rem;line-height:1.5}
+.plo li:last-child{border-bottom:0}
+.plo .code{font-family:var(--display);color:var(--purple);font-size:1.05rem}
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:8px 32px}
+.term h4{margin:10px 0 0;color:var(--purple)}
+.term .tbl{margin:6px 0 10px}
+table.courses{min-width:0;font-size:.98rem}
+table.courses th,table.courses td{padding:8px 10px}
+table.courses thead th{white-space:nowrap}
+table.courses td:first-child{white-space:nowrap;color:var(--ink-soft);width:84px}
+table .num{text-align:right;white-space:nowrap}
+table tr.total td{font-weight:700;color:var(--plum);border-top:2px solid var(--purple);border-bottom:0}
+table.narrow{min-width:0;max-width:460px}
+tbody th{white-space:normal;min-width:170px}
+.steps{list-style:none;counter-reset:st;padding:0;margin:0;max-width:none}
+.steps li{counter-increment:st;position:relative;padding:0 0 22px 56px;margin:0;max-width:70ch;font-size:1.02rem}
+.steps li::before{content:counter(st);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--purple);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:1.1rem}
+.steps li::after{content:"";position:absolute;left:18px;top:42px;bottom:4px;width:2px;background:var(--lilac-line)}
+.steps li:last-child::after{display:none}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:22px 26px;background:var(--plum);color:#E6DCF3;border-radius:10px;margin:0 0 18px}
+.price b{font-family:var(--display);font-weight:500;font-size:2.4rem;color:#fff;line-height:1}
+.notebox{border-left:3px solid var(--purple);background:#fff;padding:14px 18px;border-radius:0 6px 6px 0;font-size:1rem;max-width:70ch}
+.tint .notebox{background:#fff}
+.fac .fig b{font-size:2.4rem}
+a.explore-btn{text-decoration:none}
+a.explore-btn:hover{color:#fff}
+.cell-list{margin:0;padding-left:1.1em;max-width:none}
+.cell-list li{margin:0 0 .45em}
+.cell-list li:last-child{margin-bottom:0}
+.cell-list li::marker{color:var(--purple)}
+.important{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--lilac-line);border-radius:8px;padding:16px 20px;margin:18px 0 6px;max-width:74ch}
+.imp-icon{flex:none;width:40px;height:40px;border-radius:50%;background:var(--amber);display:grid;place-items:center}
+.imp-icon svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.important b{display:block;color:var(--amber);font-size:1.05rem;letter-spacing:.01em;margin-bottom:2px}
+.important p{margin:0;font-size:1.02rem;color:var(--ink);max-width:none}
+.term{border:1px solid var(--lilac-line);border-radius:10px;overflow:hidden;background:#fff;margin:10px 0 14px;align-self:start}
+.term h4{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin:0;padding:11px 16px;background:var(--purple);color:#fff;font-family:var(--display);font-weight:600;font-size:1.2rem}
+.term h4 .tcred{margin-left:auto;font-family:var(--body);font-weight:700;font-size:.9rem;background:rgba(255,255,255,.18);padding:2px 12px;border-radius:999px;white-space:nowrap}
+.term h4 em{font-family:var(--body);font-style:normal;font-weight:400;font-size:.9rem;color:#E6DCF3}
+.term.summer h4{background:var(--lilac);color:var(--plum);border-bottom:1px solid var(--lilac-line)}
+.term.summer h4 .tcred{background:#fff;color:var(--purple)}
+.term .tbl{margin:0;padding:4px 8px 6px}
+.term table.courses tr.total td{border-bottom:0}
+.terms{gap:6px 24px}
